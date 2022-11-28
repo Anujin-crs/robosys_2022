@@ -1,13 +1,13 @@
 # plus command
 ![test](https://github.com/Anujin-crs/robosys_plus/actions/workflows/test.yml/badge.svg)
 
-plus calculation program which add numbers read from standard input
+Plus calculation program which add numbers read from standard input
 
 ## Usage
-Example: Calculate the sum of integers from 1 to 5
-
-'''python
-seq 5 | ./plus
+Example: 
+```bash
+$ seq 5 | ./plus  # to calculate the sum of integers from 1 to 5
+```
 
 ## Required software
 * Python
