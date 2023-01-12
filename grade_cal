@@ -1,0 +1,36 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2022 Anujin-crs 
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+def tonum(s):
+    try:
+        return int(s)
+    except:
+        return float(s)
+
+ans = 0
+n = 0
+
+for line in sys.stdin:
+    line = line.rstrip()
+    ans += tonum(line)
+    n += 1
+
+avg = ans / n
+
+if avg >= 90 and avg <= 100:
+    print(avg, "Grade:S")
+elif avg >= 80 and avg < 90:
+    print(avg, "Grade:A")
+elif avg >= 70 and avg < 80:
+    print(avg, "Grade:B")
+elif avg >= 60 and avg < 70:
+    print(avg, "Grade:C")
+elif avg < 60:
+    print(avg, "Couldn't pass")
+else:
+    print("Invalid Input!")
+
+
