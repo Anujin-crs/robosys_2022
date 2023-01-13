@@ -9,16 +9,29 @@ Calculation program which reads the grades, find their average value and marks i
 
 ### grades
 A file containing the grades.
+```bash
+$ cat grades  
+100                 # input your data in column like shown in this interface. 
+80
+75
+96
+99
+```
+
+## Input output example
+Input data from the file containing the grades:
+```bash
+$ cat grades | ./grade_cal  # or ./grade_cal <grades  
+```
+Output:
+```bash
+Grade    Mark
+90.0     S
+```
 
 ## Install package
 ```bash
 $ git clone https://github.com/Anujin-crs/robosys_2022/ 
-```
-
-## Usage 
-Example: 
-```bash
-$ cat grades | ./grade_cal  # or ./grade_cal <grades 
 ```
 
 ## Required software

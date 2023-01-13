@@ -10,6 +10,7 @@ def tonum(s):
     except:
         return float(s)
 
+
 ans = 0
 n = 0
 
@@ -20,16 +21,22 @@ for line in sys.stdin:
 
 avg = ans / n
 
+
 if avg >= 90 and avg <= 100:
-    print(avg, "Grade:S")
+    print("Grade", f"{'Mark' : ^10}")
+    print(avg, f"{'S' : ^10}")
 elif avg >= 80 and avg < 90:
-    print(avg, "Grade:A")
+    print("Grade", f"{'Mark' : ^10}")
+    print(avg, f"{'A' : ^10}")
 elif avg >= 70 and avg < 80:
-    print(avg, "Grade:B")
+    print("Grade", f"{'Mark' : ^10}")
+    print(avg, f"{'B' : ^10}")
 elif avg >= 60 and avg < 70:
-    print(avg, "Grade:C")
+    print("Grade", f"{'Mark' : ^10}")
+    print(avg, f"{'C' : ^10}")
 elif avg < 60:
-    print(avg, "Couldn't pass")
+    print("Grade", f"{'Mark' : ^10}")
+    print(avg, f"{'Failed' : ^15}")
 else:
     print("Invalid Input!")
 
